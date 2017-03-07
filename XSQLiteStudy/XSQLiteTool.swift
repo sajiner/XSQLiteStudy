@@ -61,4 +61,16 @@ extension XSQLiteTool {
         // 执行sqlite语句
         return sqlite3_exec(db, sql, nil, nil, nil) == SQLITE_OK
     }
+    
+    func insertTable(columnNameArray: [String], valueArray: [Any]) -> Bool {
+        let columnNames = (columnNameArray as NSArray).componentsJoined(by: ",")
+        let values = (valueArray as NSArray).componentsJoined(by: "\',\'")
+        let sql = "insert into t_stu(\(columnNames)) values (\'\(values)\')"
+        return sqlite3_exec(db, sql, nil, nil, nil) == SQLITE_OK
+    }
+    
+    func insertTable(name: String, age: Int, score: Double) -> Bool {
+        let sql = "insert into t_stu(name, age, score) values (\'\(name)\', \'\(age)\', \'\(score)\')"
+        return sqlite3_exec(db, sql, nil, nil, nil) == SQLITE_OK
+    }
 }

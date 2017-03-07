@@ -17,7 +17,9 @@ class ViewController: UIViewController {
 
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let tool = XSQLiteTool.shareInstance
-        print(tool)
+        for _ in 0..<99 {
+            let stu = XStudent(name: "sajiner", age: 29, score: 89)
+            stu.insertStudent()
+        }
     }
 }
