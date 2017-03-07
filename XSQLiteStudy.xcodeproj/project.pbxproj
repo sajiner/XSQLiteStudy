@@ -12,6 +12,9 @@
 		AEDE98781E6E4D22004DA791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDE98761E6E4D22004DA791 /* Main.storyboard */; };
 		AEDE987A1E6E4D22004DA791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDE98791E6E4D22004DA791 /* Assets.xcassets */; };
 		AEDE987D1E6E4D22004DA791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDE987B1E6E4D22004DA791 /* LaunchScreen.storyboard */; };
+		AEDE98861E6E4E0F004DA791 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDE98851E6E4E0F004DA791 /* libsqlite3.tbd */; };
+		AEDE988F1E6E4EB5004DA791 /* XSQLiteTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDE988E1E6E4EB5004DA791 /* XSQLiteTool.swift */; };
+		AEDE98911E6E4ED5004DA791 /* XStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDE98901E6E4ED5004DA791 /* XStudent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,10 @@
 		AEDE98791E6E4D22004DA791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEDE987C1E6E4D22004DA791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEDE987E1E6E4D22004DA791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEDE98851E6E4E0F004DA791 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		AEDE98871E6E4E1D004DA791 /* XSQLiteStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XSQLiteStudy-Bridging-Header.h"; sourceTree = "<group>"; };
+		AEDE988E1E6E4EB5004DA791 /* XSQLiteTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSQLiteTool.swift; sourceTree = "<group>"; };
+		AEDE98901E6E4ED5004DA791 /* XStudent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XStudent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEDE98861E6E4E0F004DA791 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				AEDE98711E6E4D22004DA791 /* XSQLiteStudy */,
 				AEDE98701E6E4D22004DA791 /* Products */,
+				AEDE98841E6E4E0F004DA791 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,25 @@
 		AEDE98711E6E4D22004DA791 /* XSQLiteStudy */ = {
 			isa = PBXGroup;
 			children = (
+				AEDE98901E6E4ED5004DA791 /* XStudent.swift */,
+				AEDE988E1E6E4EB5004DA791 /* XSQLiteTool.swift */,
 				AEDE98721E6E4D22004DA791 /* AppDelegate.swift */,
 				AEDE98741E6E4D22004DA791 /* ViewController.swift */,
 				AEDE98761E6E4D22004DA791 /* Main.storyboard */,
 				AEDE98791E6E4D22004DA791 /* Assets.xcassets */,
 				AEDE987B1E6E4D22004DA791 /* LaunchScreen.storyboard */,
 				AEDE987E1E6E4D22004DA791 /* Info.plist */,
+				AEDE98871E6E4E1D004DA791 /* XSQLiteStudy-Bridging-Header.h */,
 			);
 			path = XSQLiteStudy;
+			sourceTree = "<group>";
+		};
+		AEDE98841E6E4E0F004DA791 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEDE98851E6E4E0F004DA791 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,12 +110,14 @@
 		AEDE98671E6E4D22004DA791 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = X;
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = sajiner;
 				TargetAttributes = {
 					AEDE986E1E6E4D22004DA791 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEDE98911E6E4ED5004DA791 /* XStudent.swift in Sources */,
+				AEDE988F1E6E4EB5004DA791 /* XSQLiteTool.swift in Sources */,
 				AEDE98751E6E4D22004DA791 /* ViewController.swift in Sources */,
 				AEDE98731E6E4D22004DA791 /* AppDelegate.swift in Sources */,
 			);
@@ -258,10 +282,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = XSQLiteStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sajiner.XSQLiteStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XSQLiteStudy/XSQLiteStudy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -270,10 +297,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = XSQLiteStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sajiner.XSQLiteStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XSQLiteStudy/XSQLiteStudy-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
