@@ -29,9 +29,19 @@ class XStudent: NSObject {
             print("插入表失败")
         }
     }
+    
+    func insertBindStu() {
+        let result = XSQLiteTool.shareInstance.insertBind(columnNameArray: ["name", "age", "score"], valueArray: [self.name, self.age, self.score])
+        if result {
+            //            print("插入表成功")
+        } else {
+            print("插入表失败")
+        }
+    }
 }
 
 extension XStudent {
+    
     func insertBind() {
         
         // 1.创建准备语句
@@ -50,6 +60,7 @@ extension XStudent {
         
         if sqlite3_prepare_v2(db, sql, -1, &stmt, nil) != SQLITE_OK {
             print("准备语句创建失败")
+            sqlite3_finalize(stmt)
             return
         }
         

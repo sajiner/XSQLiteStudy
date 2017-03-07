@@ -22,12 +22,12 @@ class ViewController: UIViewController {
         
         print("开始插入")
         let beginTime = CFAbsoluteTimeGetCurrent()
-        
+        XSQLiteTool.shareInstance.beginTransaction()
 //        for _ in 0..<10000 {
 //            stu.insertStudent()
 //        }
-        stu.insertBind10000()
-        
+        stu.insertBindStu()
+        XSQLiteTool.shareInstance.commitTransaction()
         let endTime = CFAbsoluteTimeGetCurrent()
         
         print(endTime - beginTime)
