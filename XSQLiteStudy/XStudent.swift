@@ -20,6 +20,10 @@ class XStudent: NSObject {
         self.score = score
     }
     
+   static func updateStudent(setStr: String, condition: String) -> Bool {
+        return XSQLiteTool.shareInstance.updateTable(setStr: setStr, condition: condition)
+    }
+    
     func insertStudent() {
 //        let result = XSQLiteTool.shareInstance.insertTable(name: self.name, age: self.age, score: self.score)
         let result = XSQLiteTool.shareInstance.insertTable(columnNameArray: ["name", "age", "score"], valueArray: [self.name, self.age, self.score])

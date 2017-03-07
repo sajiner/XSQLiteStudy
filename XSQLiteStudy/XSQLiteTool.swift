@@ -39,8 +39,17 @@ class XSQLiteTool: NSObject {
     }
 }
 
+//MARK: - 更新表中数据
 extension XSQLiteTool {
-    func createTable() -> Bool {
+    func updateTable(setStr: String, condition: String) -> Bool {
+        let sql = "update t_stu set \(setStr) where \(condition)"
+        return execSQL(sql: sql)
+    }
+}
+
+extension XSQLiteTool {
+    /// 创建表
+   fileprivate func createTable() -> Bool {
         // 创建sqlite语句
         let sql = "create table if not exists t_stu(name text, age integer, score real, id integer primary key autoincrement)"
         // 执行SQL语句
@@ -54,6 +63,7 @@ extension XSQLiteTool {
         
     }
     
+    /// 删除表
     func dropTable() -> Bool {
         // 删除sqlite语句
         let sql = "drop table if exists s_stu"
@@ -61,6 +71,7 @@ extension XSQLiteTool {
         return execSQL(sql: sql)
     }
     
+    /// 插入sqlite语句
     func insertTable(columnNameArray: [String], valueArray: [Any]) -> Bool {
         let columnNames = (columnNameArray as NSArray).componentsJoined(by: ",")
         let values = (valueArray as NSArray).componentsJoined(by: "\',\'")
