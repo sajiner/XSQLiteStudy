@@ -15,6 +15,13 @@
 		AEDE98861E6E4E0F004DA791 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDE98851E6E4E0F004DA791 /* libsqlite3.tbd */; };
 		AEDE988F1E6E4EB5004DA791 /* XSQLiteTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDE988E1E6E4EB5004DA791 /* XSQLiteTool.swift */; };
 		AEDE98911E6E4ED5004DA791 /* XStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDE98901E6E4ED5004DA791 /* XStudent.swift */; };
+		AEDE989F1E6EAF93004DA791 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDE98941E6EAF93004DA791 /* FMDatabase.m */; };
+		AEDE98A01E6EAF93004DA791 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDE98961E6EAF93004DA791 /* FMDatabaseAdditions.m */; };
+		AEDE98A11E6EAF93004DA791 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDE98981E6EAF93004DA791 /* FMDatabasePool.m */; };
+		AEDE98A21E6EAF93004DA791 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDE989A1E6EAF93004DA791 /* FMDatabaseQueue.m */; };
+		AEDE98A31E6EAF93004DA791 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDE989D1E6EAF93004DA791 /* FMResultSet.m */; };
+		AEDE98A41E6EAF93004DA791 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEDE989E1E6EAF93004DA791 /* Info.plist */; };
+		AEDE98A61E6EB495004DA791 /* XFMDBTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDE98A51E6EB495004DA791 /* XFMDBTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,19 @@
 		AEDE98871E6E4E1D004DA791 /* XSQLiteStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XSQLiteStudy-Bridging-Header.h"; sourceTree = "<group>"; };
 		AEDE988E1E6E4EB5004DA791 /* XSQLiteTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSQLiteTool.swift; sourceTree = "<group>"; };
 		AEDE98901E6E4ED5004DA791 /* XStudent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XStudent.swift; sourceTree = "<group>"; };
+		AEDE98931E6EAF93004DA791 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		AEDE98941E6EAF93004DA791 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		AEDE98951E6EAF93004DA791 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		AEDE98961E6EAF93004DA791 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		AEDE98971E6EAF93004DA791 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		AEDE98981E6EAF93004DA791 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		AEDE98991E6EAF93004DA791 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		AEDE989A1E6EAF93004DA791 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		AEDE989B1E6EAF93004DA791 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		AEDE989C1E6EAF93004DA791 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		AEDE989D1E6EAF93004DA791 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		AEDE989E1E6EAF93004DA791 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEDE98A51E6EB495004DA791 /* XFMDBTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XFMDBTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +83,12 @@
 		AEDE98711E6E4D22004DA791 /* XSQLiteStudy */ = {
 			isa = PBXGroup;
 			children = (
+				AEDE98921E6EAF93004DA791 /* fmdb */,
 				AEDE98901E6E4ED5004DA791 /* XStudent.swift */,
 				AEDE988E1E6E4EB5004DA791 /* XSQLiteTool.swift */,
 				AEDE98721E6E4D22004DA791 /* AppDelegate.swift */,
 				AEDE98741E6E4D22004DA791 /* ViewController.swift */,
+				AEDE98A51E6EB495004DA791 /* XFMDBTool.swift */,
 				AEDE98761E6E4D22004DA791 /* Main.storyboard */,
 				AEDE98791E6E4D22004DA791 /* Assets.xcassets */,
 				AEDE987B1E6E4D22004DA791 /* LaunchScreen.storyboard */,
@@ -82,6 +104,25 @@
 				AEDE98851E6E4E0F004DA791 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEDE98921E6EAF93004DA791 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				AEDE98931E6EAF93004DA791 /* FMDatabase.h */,
+				AEDE98941E6EAF93004DA791 /* FMDatabase.m */,
+				AEDE98951E6EAF93004DA791 /* FMDatabaseAdditions.h */,
+				AEDE98961E6EAF93004DA791 /* FMDatabaseAdditions.m */,
+				AEDE98971E6EAF93004DA791 /* FMDatabasePool.h */,
+				AEDE98981E6EAF93004DA791 /* FMDatabasePool.m */,
+				AEDE98991E6EAF93004DA791 /* FMDatabaseQueue.h */,
+				AEDE989A1E6EAF93004DA791 /* FMDatabaseQueue.m */,
+				AEDE989B1E6EAF93004DA791 /* FMDB.h */,
+				AEDE989C1E6EAF93004DA791 /* FMResultSet.h */,
+				AEDE989D1E6EAF93004DA791 /* FMResultSet.m */,
+				AEDE989E1E6EAF93004DA791 /* Info.plist */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEDE98A41E6EAF93004DA791 /* Info.plist in Resources */,
 				AEDE987D1E6E4D22004DA791 /* LaunchScreen.storyboard in Resources */,
 				AEDE987A1E6E4D22004DA791 /* Assets.xcassets in Resources */,
 				AEDE98781E6E4D22004DA791 /* Main.storyboard in Resources */,
@@ -159,9 +201,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEDE98911E6E4ED5004DA791 /* XStudent.swift in Sources */,
+				AEDE98A21E6EAF93004DA791 /* FMDatabaseQueue.m in Sources */,
 				AEDE988F1E6E4EB5004DA791 /* XSQLiteTool.swift in Sources */,
 				AEDE98751E6E4D22004DA791 /* ViewController.swift in Sources */,
+				AEDE989F1E6EAF93004DA791 /* FMDatabase.m in Sources */,
+				AEDE98A11E6EAF93004DA791 /* FMDatabasePool.m in Sources */,
+				AEDE98A31E6EAF93004DA791 /* FMResultSet.m in Sources */,
 				AEDE98731E6E4D22004DA791 /* AppDelegate.swift in Sources */,
+				AEDE98A01E6EAF93004DA791 /* FMDatabaseAdditions.m in Sources */,
+				AEDE98A61E6EB495004DA791 /* XFMDBTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

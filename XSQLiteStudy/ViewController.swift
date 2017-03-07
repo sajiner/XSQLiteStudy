@@ -12,19 +12,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
 
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        XSQLiteTool.shareInstance.beginTransaction()
-        let result1 = XStudent.updateStudent(setStr: "score = score - 10", condition: "name = 'sajiner'")
-        let result2 = XStudent.updateStudent(setStr: "score = score + 10", condition: "name     `= 'zx'")
         
-        if result1 && result2 {
-            XSQLiteTool.shareInstance.commitTransaction()
-        } else {
-            XSQLiteTool.shareInstance.rollBackTransaction()
-        }
+        let result = XFMDBTool.shareInstance.selectTable()
+        print(result)
+ 
 //        let stu = XStudent(name: "sajiner", age: 29, score: 89)
 //        
 //        
@@ -40,5 +37,19 @@ class ViewController: UIViewController {
 //        
 //        print(endTime - beginTime)
 //        print("结束插入")
+    }
+}
+
+extension ViewController {
+    func transaction() {
+        XSQLiteTool.shareInstance.beginTransaction()
+        let result1 = XStudent.updateStudent(setStr: "score = score - 10", condition: "name = 'sajiner'")
+        let result2 = XStudent.updateStudent(setStr: "score = score + 10", condition: "name = 'zx'")
+        
+        if result1 && result2 {
+            XSQLiteTool.shareInstance.commitTransaction()
+        } else {
+            XSQLiteTool.shareInstance.rollBackTransaction()
+        }
     }
 }
