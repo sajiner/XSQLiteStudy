@@ -17,9 +17,20 @@ class ViewController: UIViewController {
 
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for _ in 0..<99 {
-            let stu = XStudent(name: "sajiner", age: 29, score: 89)
-            stu.insertStudent()
-        }
+        
+        let stu = XStudent(name: "sajiner", age: 29, score: 89)
+        
+        print("开始插入")
+        let beginTime = CFAbsoluteTimeGetCurrent()
+        
+//        for _ in 0..<10000 {
+//            stu.insertStudent()
+//        }
+        stu.insertBind10000()
+        
+        let endTime = CFAbsoluteTimeGetCurrent()
+        
+        print(endTime - beginTime)
+        print("结束插入")
     }
 }

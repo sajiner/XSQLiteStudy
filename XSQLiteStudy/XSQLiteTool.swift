@@ -73,4 +73,6 @@ extension XSQLiteTool {
         let sql = "insert into t_stu(name, age, score) values (\'\(name)\', \'\(age)\', \'\(score)\')"
         return sqlite3_exec(db, sql, nil, nil, nil) == SQLITE_OK
     }
+    
+   
 }
