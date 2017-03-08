@@ -19,12 +19,12 @@ class ViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        let result = XFMDBTool.shareInstance.selectTable()
-        print(result)
+//        let result = XFMDBTool.shareInstance.insertTable()
+//        print(result)
  
+        XFMDBTool.shareInstance.query()
+        
 //        let stu = XStudent(name: "sajiner", age: 29, score: 89)
-//        
-//        
 //        print("开始插入")
 //        let beginTime = CFAbsoluteTimeGetCurrent()
 //        XSQLiteTool.shareInstance.beginTransaction()
