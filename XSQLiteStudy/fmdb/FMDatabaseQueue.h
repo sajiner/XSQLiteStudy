@@ -78,7 +78,7 @@
 
 /**  Custom virtual file system name */
 
-@property (atomic, copy) NSString *vfsName;
+@property (atomic, copy) NSString *vfsName; 
 
 ///----------------------------------------------------
 /// @name Initialization, opening, and closing of queue

@@ -16,12 +16,21 @@ class XFMDBTool: NSObject {
         let fileName = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
         let pathName: String = fileName! + "/zx.sqlite"
 //        let pathName: String = "/Users/sajiner/Desktop/demomo/sajiner.sqlite"
+        // 如果传入的参数是“”空串，fmdb会在临时文件目录下创建这个数据库，如果传入的参数是NULL，会建立一个内存中的数据库
         let db = FMDatabase(path: pathName)
         return db!
     }()
     
+    var queue: FMDatabaseQueue = {
+        let fileName = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
+        let pathName: String = fileName! + "/zx.sqlite"
+        let queue = FMDatabaseQueue(path: pathName)
+        return queue!
+    }()
+    
     override init() {
         super.init()
+    
         if !db.open() {
             print("打开数据库失败")
             return
