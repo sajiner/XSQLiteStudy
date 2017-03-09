@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE969EE71E70FEFA00EC4C60 /* XDataTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE969EE61E70FEFA00EC4C60 /* XDataTool.swift */; };
+		AEA0F0C81E70EEC10050666C /* XTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F0C71E70EEC10050666C /* XTableViewController.swift */; };
+		AEA0F0CA1E70EED50050666C /* XUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F0C91E70EED50050666C /* XUser.swift */; };
+		AEA0F0CC1E70EF5E0050666C /* XSQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F0CB1E70EF5E0050666C /* XSQLiteManager.swift */; };
 		AEDE98731E6E4D22004DA791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDE98721E6E4D22004DA791 /* AppDelegate.swift */; };
 		AEDE98751E6E4D22004DA791 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDE98741E6E4D22004DA791 /* ViewController.swift */; };
 		AEDE98781E6E4D22004DA791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDE98761E6E4D22004DA791 /* Main.storyboard */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE969EE61E70FEFA00EC4C60 /* XDataTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDataTool.swift; sourceTree = "<group>"; };
+		AEA0F0C71E70EEC10050666C /* XTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTableViewController.swift; sourceTree = "<group>"; };
+		AEA0F0C91E70EED50050666C /* XUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XUser.swift; sourceTree = "<group>"; };
+		AEA0F0CB1E70EF5E0050666C /* XSQLiteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSQLiteManager.swift; sourceTree = "<group>"; };
 		AEDE986F1E6E4D22004DA791 /* XSQLiteStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSQLiteStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEDE98721E6E4D22004DA791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEDE98741E6E4D22004DA791 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +71,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AEA0F0C61E70EEC10050666C /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				AEA0F0C71E70EEC10050666C /* XTableViewController.swift */,
+				AEA0F0C91E70EED50050666C /* XUser.swift */,
+				AEA0F0CB1E70EF5E0050666C /* XSQLiteManager.swift */,
+				AE969EE61E70FEFA00EC4C60 /* XDataTool.swift */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
 		AEDE98661E6E4D22004DA791 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +102,7 @@
 		AEDE98711E6E4D22004DA791 /* XSQLiteStudy */ = {
 			isa = PBXGroup;
 			children = (
+				AEA0F0C61E70EEC10050666C /* demo */,
 				AEDE98921E6EAF93004DA791 /* fmdb */,
 				AEDE98901E6E4ED5004DA791 /* XStudent.swift */,
 				AEDE988E1E6E4EB5004DA791 /* XSQLiteTool.swift */,
@@ -203,12 +223,16 @@
 				AEDE98911E6E4ED5004DA791 /* XStudent.swift in Sources */,
 				AEDE98A21E6EAF93004DA791 /* FMDatabaseQueue.m in Sources */,
 				AEDE988F1E6E4EB5004DA791 /* XSQLiteTool.swift in Sources */,
+				AEA0F0CC1E70EF5E0050666C /* XSQLiteManager.swift in Sources */,
 				AEDE98751E6E4D22004DA791 /* ViewController.swift in Sources */,
 				AEDE989F1E6EAF93004DA791 /* FMDatabase.m in Sources */,
 				AEDE98A11E6EAF93004DA791 /* FMDatabasePool.m in Sources */,
 				AEDE98A31E6EAF93004DA791 /* FMResultSet.m in Sources */,
+				AEA0F0C81E70EEC10050666C /* XTableViewController.swift in Sources */,
 				AEDE98731E6E4D22004DA791 /* AppDelegate.swift in Sources */,
+				AEA0F0CA1E70EED50050666C /* XUser.swift in Sources */,
 				AEDE98A01E6EAF93004DA791 /* FMDatabaseAdditions.m in Sources */,
+				AE969EE71E70FEFA00EC4C60 /* XDataTool.swift in Sources */,
 				AEDE98A61E6EB495004DA791 /* XFMDBTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +398,7 @@
 				AEDE98831E6E4D22004DA791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
